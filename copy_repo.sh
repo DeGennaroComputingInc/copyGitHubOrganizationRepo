@@ -22,10 +22,10 @@ while getopts "e:r:o:u:h:" Option
 do
     case $Option in
         e     ) ENDPOINT=$OPTARG
-                echo "Your organizations endpoint (in the form of https://your.orgs.github.webinterface.org): option -e-"
+                echo "Your organization's endpoint (in the form of https://your.orgs.github.webinterface.org): option -e-"
                 echo "with argument \"$OPTARG\"   [OPTIND=${OPTIND}]";;
         r     ) REPO=$OPTARG
-                echo "The repo name to be cloned from (typically provide by instructor): option -r-"
+                echo "The repo name to be cloned from : option -r-"
                 echo "with argument \"$OPTARG\"   [OPTIND=${OPTIND}]";;
         o     ) ORG=$OPTARG
                 echo "The organization the repo to be cloned from and new repo will be in: option -o-"
@@ -38,7 +38,7 @@ do
                 echo "with argument \"$OPTARG\"   [OPTIND=${OPTIND}]";;
         *     ) echo "Unimplemented option chosen."
                 echo "Usage: `basename $0` -e endpoint -o organiztion_name -r repo_name -u user_name (-h human_name)"
-                echo "This script should be run in the directory where you want your code to live"
+                echo "This script should be run in a directory where the directories for the two repos (public one cloned from, private one created) will be"
                 exit $E_OPTERROR          # Exit and explain usage.
 ;;   # Default.
     esac
