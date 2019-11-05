@@ -11,3 +11,8 @@ Usage: copy_repo.sh -e endpoint #Your organization's endpoint (in the form of ht
                     (-h human_name) #Your human name to be written into the project description (optional)
 This script should be run in a directory where the directories for the two repos (public one cloned from, private one created) will be
 ```
+# Resources
+- (https://medium.com/altcampus/how-to-merge-two-or-multiple-git-repositories-into-one-9f8a5209913f)
+- (https://developer.github.com/enterprise/2.18/v3/repos/)
+- (https://www.tldp.org/LDP/abs/html/internal.html)
+- (https://github.com/github/hub) <== This was an interesting project and could be possible to leverage this for a more portable solution; however, my cursory reading of the README made it seem like there wasn't a solution that didn't involve some scripting.
